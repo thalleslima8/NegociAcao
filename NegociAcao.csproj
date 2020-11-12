@@ -46,11 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\OrdemDeCompra.cs">
+    <Compile Include="Controllers\OrdemController.cs" />
+    <Compile Include="Forms\Frm_Base.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\OrdemDeCompra.Designer.cs">
-      <DependentUpon>OrdemDeCompra.cs</DependentUpon>
+    <Compile Include="Forms\Frm_Base.Designer.cs">
+      <DependentUpon>Frm_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_OrdemDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_OrdemDeCompra.Designer.cs">
+      <DependentUpon>Frm_OrdemDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UC_MinhasOrdens.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UC_MinhasOrdens.Designer.cs">
+      <DependentUpon>UC_MinhasOrdens.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Enum\TipoOrdem.cs" />
     <Compile Include="Models\Ordem.cs" />
@@ -64,8 +77,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\OrdemDeCompra.resx">
-      <DependentUpon>OrdemDeCompra.cs</DependentUpon>
+    <Compile Include="Services\DBService.cs" />
+    <EmbeddedResource Include="Forms\Frm_Base.resx">
+      <DependentUpon>Frm_Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_OrdemDeCompra.resx">
+      <DependentUpon>Frm_OrdemDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UC_MinhasOrdens.resx">
+      <DependentUpon>UC_MinhasOrdens.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>

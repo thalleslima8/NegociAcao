@@ -1,6 +1,6 @@
 ﻿namespace NegociAcao.Forms
 {
-    partial class OrdemDeCompra
+    partial class Frm_OrdemDeCompra
     {
         /// <summary>
         /// Required designer variable.
@@ -63,9 +63,10 @@
             // 
             // Dtp_Data
             // 
+            this.Dtp_Data.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.Dtp_Data.Location = new System.Drawing.Point(137, 45);
             this.Dtp_Data.Name = "Dtp_Data";
-            this.Dtp_Data.Size = new System.Drawing.Size(216, 20);
+            this.Dtp_Data.Size = new System.Drawing.Size(91, 20);
             this.Dtp_Data.TabIndex = 2;
             this.Dtp_Data.Value = new System.DateTime(2020, 11, 12, 13, 46, 45, 0);
             // 
@@ -156,7 +157,7 @@
             this.Msk_Qtd.TextChanged += new System.EventHandler(this.Msk_Qtd_TextChanged);
             this.Msk_Qtd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Msk_Qtd_KeyDown);
             // 
-            // OrdemDeCompra
+            // Frm_OrdemDeCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -174,7 +175,8 @@
             this.Controls.Add(this.Lbl_Papel);
             this.Controls.Add(this.Txt_Papel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "OrdemDeCompra";
+            this.Name = "Frm_OrdemDeCompra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ordem De Compra";
             this.Load += new System.EventHandler(this.OrdemDeCompra_Load);
             this.ResumeLayout(false);

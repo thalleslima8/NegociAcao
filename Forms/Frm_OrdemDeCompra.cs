@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NegociAcao.Forms
 {
-    public partial class OrdemDeCompra : Form
+    public partial class Frm_OrdemDeCompra : Form
     {
-        public OrdemDeCompra()
+        public Frm_OrdemDeCompra()
         {
             InitializeComponent();
         }
@@ -22,23 +22,7 @@ namespace NegociAcao.Forms
             Txt_Papel.Focus();
         }
 
-        //private void Txt_Qtd_KeyDown(object sender, KeyEventArgs e)
-        //{
-        //    var cod = e.KeyValue;
-
-        //    //48->57 e 96->105
-        //    if(cod > 48 && cod < 105)
-        //    {
-        //        if (cod <= 57 || cod >= 96)
-        //        {
-
-        //            Lbl_Total.Text = $"Novo Valor {cod}";
-        //            Msk_Valor.Mask = "$ 00.00";
-        //        }
-        //    }
-
-        //}
-
+ 
         private void Btn_Limpar_Click(object sender, EventArgs e)
         {
             Txt_Papel.Focus();

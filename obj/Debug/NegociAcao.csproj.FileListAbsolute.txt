@@ -1,0 +1,10 @@
+C:\Programação\NegociAcao\NegociAcao\bin\Debug\NegociAcao.exe.config
+C:\Programação\NegociAcao\NegociAcao\bin\Debug\NegociAcao.exe
+C:\Programação\NegociAcao\NegociAcao\bin\Debug\NegociAcao.pdb
+C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.csprojAssemblyReference.cache
+C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.Principal.resources
+C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.Properties.Resources.resources
+C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.csproj.GenerateResource.cache
+C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.csproj.CoreCompileInputs.cache
+C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.exe
+C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.pdb

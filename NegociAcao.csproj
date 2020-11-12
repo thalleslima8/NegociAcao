@@ -46,6 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\OrdemDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OrdemDeCompra.Designer.cs">
+      <DependentUpon>OrdemDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Enum\TipoOrdem.cs" />
+    <Compile Include="Models\Ordem.cs" />
+    <Compile Include="Models\OrdemDeCompra.cs" />
+    <Compile Include="Models\OrdemDeVenda.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +64,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\OrdemDeCompra.resx">
+      <DependentUpon>OrdemDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>

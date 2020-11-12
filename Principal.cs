@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NegociAcao.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,12 @@ namespace NegociAcao
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void novaOrdemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OrdemDeCompra ordem = new OrdemDeCompra();
+            ordem.ShowDialog();
         }
     }
 }

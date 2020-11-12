@@ -8,3 +8,4 @@ C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.csproj.GenerateResou
 C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.csproj.CoreCompileInputs.cache
 C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.exe
 C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.pdb
+C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.Forms.OrdemDeCompra.resources

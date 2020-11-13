@@ -30,7 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.conectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novaOrdemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordemDeVendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,13 +38,13 @@
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exibirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.minhasOrdensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.apagarAbasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.organizarJanelasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cascataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Pn_Painel = new System.Windows.Forms.Panel();
             this.Tbc_Ordens = new System.Windows.Forms.TabControl();
-            this.apagarAbasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.Pn_Painel.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +63,7 @@
             // arquivoToolStripMenuItem
             // 
             this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logarToolStripMenuItem,
+            this.conectarToolStripMenuItem,
             this.novoToolStripMenuItem,
             this.desconectarToolStripMenuItem,
             this.sairToolStripMenuItem});
@@ -71,11 +71,12 @@
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
             // 
-            // logarToolStripMenuItem
+            // conectarToolStripMenuItem
             // 
-            this.logarToolStripMenuItem.Name = "logarToolStripMenuItem";
-            this.logarToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.logarToolStripMenuItem.Text = "Logar";
+            this.conectarToolStripMenuItem.Name = "conectarToolStripMenuItem";
+            this.conectarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.conectarToolStripMenuItem.Text = "Conectar";
+            this.conectarToolStripMenuItem.Click += new System.EventHandler(this.logarToolStripMenuItem_Click);
             // 
             // novoToolStripMenuItem
             // 
@@ -83,7 +84,7 @@
             this.novaOrdemToolStripMenuItem,
             this.ordemDeVendaToolStripMenuItem});
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoToolStripMenuItem.Text = "Novo";
             // 
             // novaOrdemToolStripMenuItem
@@ -102,13 +103,15 @@
             // desconectarToolStripMenuItem
             // 
             this.desconectarToolStripMenuItem.Name = "desconectarToolStripMenuItem";
-            this.desconectarToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.desconectarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.desconectarToolStripMenuItem.Text = "Desconectar";
+            this.desconectarToolStripMenuItem.Click += new System.EventHandler(this.desconectarToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
+            this.sairToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -125,9 +128,16 @@
             // minhasOrdensToolStripMenuItem
             // 
             this.minhasOrdensToolStripMenuItem.Name = "minhasOrdensToolStripMenuItem";
-            this.minhasOrdensToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.minhasOrdensToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.minhasOrdensToolStripMenuItem.Text = "Exibir Ordens";
             this.minhasOrdensToolStripMenuItem.Click += new System.EventHandler(this.minhasOrdensToolStripMenuItem_Click);
+            // 
+            // apagarAbasToolStripMenuItem
+            // 
+            this.apagarAbasToolStripMenuItem.Name = "apagarAbasToolStripMenuItem";
+            this.apagarAbasToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.apagarAbasToolStripMenuItem.Text = "Apagar Aba";
+            this.apagarAbasToolStripMenuItem.Click += new System.EventHandler(this.apagarAbasToolStripMenuItem_Click);
             // 
             // organizarJanelasToolStripMenuItem
             // 
@@ -179,17 +189,11 @@
             this.Tbc_Ordens.Size = new System.Drawing.Size(1184, 637);
             this.Tbc_Ordens.TabIndex = 0;
             // 
-            // apagarAbasToolStripMenuItem
-            // 
-            this.apagarAbasToolStripMenuItem.Name = "apagarAbasToolStripMenuItem";
-            this.apagarAbasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.apagarAbasToolStripMenuItem.Text = "Apagar Aba";
-            this.apagarAbasToolStripMenuItem.Click += new System.EventHandler(this.apagarAbasToolStripMenuItem_Click);
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.Pn_Painel);
             this.Controls.Add(this.menuStrip1);
@@ -198,6 +202,7 @@
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NegociAcão";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Principal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -211,7 +216,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem conectarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem desconectarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;

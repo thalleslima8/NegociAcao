@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NegociAcao.Models
 {
-    abstract class Ordem
+    public abstract class Ordem
     {
         public int Id { get; set; }
         public DateTime Data { get; set; }
@@ -19,5 +19,14 @@ namespace NegociAcao.Models
             return Valor * Quantidade;
         }
 
+        public override string ToString()
+        {
+            return $"Dados da Ordem Id: {Id}:" +
+                $"\r\nData: {Data}" +
+                $"\r\nPapel: {Papel}" +
+                $"\r\nValor Unitário: R$ {Valor}" +
+                $"\r\nQuantidade: {Quantidade}" +
+                $"\r\nValor Total: R$ {Volume()}";
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NegociAcao.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace NegociAcao.Forms
 {
     public partial class Frm_OrdemDeCompra : Form
     {
+        int id;
         public Frm_OrdemDeCompra()
         {
             InitializeComponent();
@@ -19,14 +21,14 @@ namespace NegociAcao.Forms
 
         private void OrdemDeCompra_Load(object sender, EventArgs e)
         {
-            Txt_Papel.Focus();
+            Msk_Papel.Focus();
         }
 
  
         private void Btn_Limpar_Click(object sender, EventArgs e)
         {
-            Txt_Papel.Focus();
-            Txt_Papel.Text = "Digite o Papel";
+            Msk_Papel.Focus();
+            Msk_Papel.Text = "Digite o Papel";
             Msk_Qtd.Text = "";
             Msk_Valor.Text = "";
             Lbl_Total.Text = "";
@@ -52,6 +54,22 @@ namespace NegociAcao.Forms
                 Lbl_Total.Text = "R$ 0,00";
                 Msk_Qtd.Focus();
             }
+        }
+
+        private void Btn_Adiciona_Click(object sender, EventArgs e)
+        {
+            OrdemDeCompra oc = new OrdemDeCompra(Models.Enum.TipoOrdem.Compra);
+            oc.Id = id++;
+            oc.Data = Dtp_Data.Value;
+            oc.Papel = Msk_Papel.Text;
+            oc.Valor = double.Parse((Msk_Valor.Text).Replace("R$ ", ""));
+            oc.Quantidade = int.Parse(Msk_Qtd.Text);
+
+            //Faz a inclusão da ordem no DB
+
+            Frm_Alert_Info alert = new Frm_Alert_Info(oc);
+            alert.ShowDialog();
+            Close();
         }
     }
 }

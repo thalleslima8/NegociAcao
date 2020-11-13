@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Txt_Papel = new System.Windows.Forms.TextBox();
             this.Lbl_Papel = new System.Windows.Forms.Label();
             this.Dtp_Data = new System.Windows.Forms.DateTimePicker();
             this.Lbl_Data = new System.Windows.Forms.Label();
@@ -40,15 +39,8 @@
             this.Lbl_Total = new System.Windows.Forms.Label();
             this.Btn_Limpar = new System.Windows.Forms.Button();
             this.Msk_Qtd = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_Papel = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
-            // 
-            // Txt_Papel
-            // 
-            this.Txt_Papel.Location = new System.Drawing.Point(10, 45);
-            this.Txt_Papel.Name = "Txt_Papel";
-            this.Txt_Papel.Size = new System.Drawing.Size(105, 20);
-            this.Txt_Papel.TabIndex = 0;
-            this.Txt_Papel.Text = "Digite a Ação";
             // 
             // Lbl_Papel
             // 
@@ -88,6 +80,7 @@
             this.Btn_Adiciona.TabIndex = 4;
             this.Btn_Adiciona.Text = "Adicionar";
             this.Btn_Adiciona.UseVisualStyleBackColor = true;
+            this.Btn_Adiciona.Click += new System.EventHandler(this.Btn_Adiciona_Click);
             // 
             // Lbl_Valor
             // 
@@ -157,11 +150,20 @@
             this.Msk_Qtd.TextChanged += new System.EventHandler(this.Msk_Qtd_TextChanged);
             this.Msk_Qtd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Msk_Qtd_KeyDown);
             // 
+            // Msk_Papel
+            // 
+            this.Msk_Papel.Location = new System.Drawing.Point(10, 45);
+            this.Msk_Papel.Mask = ">LLLL00L";
+            this.Msk_Papel.Name = "Msk_Papel";
+            this.Msk_Papel.Size = new System.Drawing.Size(91, 20);
+            this.Msk_Papel.TabIndex = 14;
+            // 
             // Frm_OrdemDeCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 211);
+            this.Controls.Add(this.Msk_Papel);
             this.Controls.Add(this.Msk_Qtd);
             this.Controls.Add(this.Btn_Limpar);
             this.Controls.Add(this.Lbl_Total);
@@ -173,7 +175,6 @@
             this.Controls.Add(this.Lbl_Data);
             this.Controls.Add(this.Dtp_Data);
             this.Controls.Add(this.Lbl_Papel);
-            this.Controls.Add(this.Txt_Papel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Frm_OrdemDeCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -185,8 +186,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox Txt_Papel;
         private System.Windows.Forms.Label Lbl_Papel;
         private System.Windows.Forms.DateTimePicker Dtp_Data;
         private System.Windows.Forms.Label Lbl_Data;
@@ -198,5 +197,6 @@
         private System.Windows.Forms.Label Lbl_Total;
         private System.Windows.Forms.Button Btn_Limpar;
         private System.Windows.Forms.MaskedTextBox Msk_Qtd;
+        private System.Windows.Forms.MaskedTextBox Msk_Papel;
     }
 }

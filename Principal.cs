@@ -17,11 +17,20 @@ namespace NegociAcao
         public Principal()
         {
             InitializeComponent();
+            novoToolStripMenuItem.Enabled = false;
+            desconectarToolStripMenuItem.Enabled = false;
+            exibirToolStripMenuItem.Enabled = false;
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Close();
+            Frm_Alerta alerta = new Frm_Alerta("Tem certeza que deseja sair?", "questoes");
+            alerta.ShowDialog();
+
+            if (alerta.DialogResult == DialogResult.OK)
+            {
+                Close();
+            }
         }
 
         private void novaOrdemToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,7 +59,7 @@ namespace NegociAcao
         {
             this.LayoutMdi(MdiLayout.TileVertical);
         }
-        
+
         private void minhasOrdensToolStripMenuItem_Click(object sender, EventArgs e)
         {
             controleMinhasOrdens++;
@@ -71,5 +80,32 @@ namespace NegociAcao
             }
         }
 
+        private void logarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Login login = new Frm_Login();
+            login.ShowDialog();
+
+            if(login.DialogResult == DialogResult.OK)
+            {
+                novoToolStripMenuItem.Enabled = true;
+                desconectarToolStripMenuItem.Enabled = true;
+                exibirToolStripMenuItem.Enabled = true;
+                conectarToolStripMenuItem.Enabled = false;
+            }
+        }
+
+        private void desconectarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Alerta alerta = new Frm_Alerta("Tem certeza que deseja sair?", "questoes");
+            alerta.ShowDialog();
+
+            if (alerta.DialogResult == DialogResult.OK)
+            {
+                novoToolStripMenuItem.Enabled = false;
+                desconectarToolStripMenuItem.Enabled = false;
+                exibirToolStripMenuItem.Enabled = false;
+                conectarToolStripMenuItem.Enabled = true;
+            }
+        }
     }
 }

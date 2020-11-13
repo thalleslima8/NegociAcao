@@ -11,3 +11,10 @@ C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.pdb
 C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.Forms.Frm_OrdemDeCompra.resources
 C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.Forms.Frm_Base.resources
 C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.Forms.UC_MinhasOrdens.resources
+C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.Forms.Frm_Alerta.resources
+C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.Forms.Frm_Login.resources
+C:\Programação\NegociAcao\NegociAcao\bin\Debug\EPPlus.dll
+C:\Programação\NegociAcao\NegociAcao\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Programação\NegociAcao\NegociAcao\bin\Debug\EPPlus.xml
+C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.csproj.CopyComplete
+C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.Forms.Frm_Alert_Info.resources

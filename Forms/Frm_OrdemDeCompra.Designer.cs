@@ -60,7 +60,7 @@
             this.Dtp_Data.Name = "Dtp_Data";
             this.Dtp_Data.Size = new System.Drawing.Size(91, 20);
             this.Dtp_Data.TabIndex = 2;
-            this.Dtp_Data.Value = new System.DateTime(2020, 11, 12, 13, 46, 45, 0);
+            this.Dtp_Data.Value = new System.DateTime(2020, 11, 13, 0, 0, 0, 0);
             // 
             // Lbl_Data
             // 
@@ -105,7 +105,7 @@
             // Msk_Valor
             // 
             this.Msk_Valor.Location = new System.Drawing.Point(10, 101);
-            this.Msk_Valor.Mask = "$ 00.00";
+            this.Msk_Valor.Mask = "$ 000.00";
             this.Msk_Valor.Name = "Msk_Valor";
             this.Msk_Valor.Size = new System.Drawing.Size(91, 20);
             this.Msk_Valor.TabIndex = 9;

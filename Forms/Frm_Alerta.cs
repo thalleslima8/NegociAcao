@@ -20,6 +20,15 @@ namespace NegociAcao.Forms
             Pic_Image.Image = Myimage;
         }
 
+        public Frm_Alerta(string msg, string nomeImagem, string nomeIcon)
+        {
+            InitializeComponent();
+            Lbl_Questao.Text = msg;
+            Image Myimage = (Image)Properties.Resources.ResourceManager.GetObject(nomeImagem);
+            Pic_Image.Image = Myimage;
+            Icon = Properties.Resources.pare;
+        }
+
         private void Btn_Ok_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;

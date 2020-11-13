@@ -31,6 +31,7 @@
             this.Lbl_Informacao = new System.Windows.Forms.Label();
             this.Lbl_DadosOrdem = new System.Windows.Forms.Label();
             this.Btn_Ok = new System.Windows.Forms.Button();
+            this.Lbl_Sucesso = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Lbl_Informacao
@@ -62,12 +63,23 @@
             this.Btn_Ok.UseVisualStyleBackColor = true;
             this.Btn_Ok.Click += new System.EventHandler(this.Btn_Ok_Click);
             // 
+            // Lbl_Sucesso
+            // 
+            this.Lbl_Sucesso.AutoSize = true;
+            this.Lbl_Sucesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Sucesso.Location = new System.Drawing.Point(30, 210);
+            this.Lbl_Sucesso.Name = "Lbl_Sucesso";
+            this.Lbl_Sucesso.Size = new System.Drawing.Size(51, 16);
+            this.Lbl_Sucesso.TabIndex = 3;
+            this.Lbl_Sucesso.Text = "label1";
+            // 
             // Frm_Alert_Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(331, 300);
+            this.Controls.Add(this.Lbl_Sucesso);
             this.Controls.Add(this.Btn_Ok);
             this.Controls.Add(this.Lbl_DadosOrdem);
             this.Controls.Add(this.Lbl_Informacao);
@@ -86,5 +98,6 @@
         private System.Windows.Forms.Label Lbl_Informacao;
         private System.Windows.Forms.Label Lbl_DadosOrdem;
         private System.Windows.Forms.Button Btn_Ok;
+        private System.Windows.Forms.Label Lbl_Sucesso;
     }
 }

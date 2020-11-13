@@ -1,4 +1,5 @@
-﻿using NegociAcao.Models.Enum;
+﻿using DotLiquid.Tags;
+using NegociAcao.Models.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NegociAcao.Models
 {
-    class OrdemDeCompra : Ordem
+    public class OrdemDeCompra : Ordem
     {
         public TipoOrdem Tipo { get; set; }
 
@@ -16,6 +17,15 @@ namespace NegociAcao.Models
             Tipo = TipoOrdem.Compra;
         }
 
-
+        public override string ToString()
+        {
+            return $"Dados da Ordem Id: {Id}:" +
+                $"\r\nData: {Data}" +
+                $"\r\nPapel: {Papel}" +
+                $"\r\nValor Unitário: R$ {Valor}" +
+                $"\r\nQuantidade: {Quantidade}" +
+                $"\r\nValor Total: R$ {Volume()}" +
+                $"\r\nTipo: {Tipo}";
+        }
     }
 }

@@ -15,5 +15,16 @@ namespace NegociAcao.Models
         {
             Tipo = TipoOrdem.Venda;
         }
+
+        public override string ToString()
+        {
+            return $"Dados da Ordem Id: {Id}:" +
+                $"\r\nData: {Data}" +
+                $"\r\nPapel: {Papel}" +
+                $"\r\nValor Unitário: R$ {Valor}" +
+                $"\r\nQuantidade: {Quantidade}" +
+                $"\r\nValor Total: R$ {Volume()}" +
+                $"\r\nTipo: {Tipo}";
+        }
     }
 }

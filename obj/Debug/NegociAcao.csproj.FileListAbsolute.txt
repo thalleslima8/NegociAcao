@@ -18,3 +18,6 @@ C:\Programação\NegociAcao\NegociAcao\bin\Debug\System.ComponentModel.Annotatio
 C:\Programação\NegociAcao\NegociAcao\bin\Debug\EPPlus.xml
 C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.csproj.CopyComplete
 C:\Programação\NegociAcao\NegociAcao\obj\Debug\NegociAcao.Forms.Frm_Alert_Info.resources
+C:\Programação\NegociAcao\NegociAcao\bin\Debug\DotLiquid.dll
+C:\Programação\NegociAcao\NegociAcao\bin\Debug\DotLiquid.xml
+C:\Programação\NegociAcao\NegociAcao\bin\Debug\it\DotLiquid.resources.dll

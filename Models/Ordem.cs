@@ -11,22 +11,19 @@ namespace NegociAcao.Models
         public int Id { get; set; }
         public DateTime Data { get; set; }
         public string Papel { get; set; }
-        public double Valor { get; set; }
+        public decimal Valor { get; set; }
         public int Quantidade { get; set; }
         
-        public double Volume()
+        public decimal Volume()
         {
             return Valor * Quantidade;
         }
 
-        public override string ToString()
+        public string ToCSV()
         {
-            return $"Dados da Ordem Id: {Id}:" +
-                $"\r\nData: {Data}" +
-                $"\r\nPapel: {Papel}" +
-                $"\r\nValor Unitário: R$ {Valor}" +
-                $"\r\nQuantidade: {Quantidade}" +
-                $"\r\nValor Total: R$ {Volume()}";
+            return $"{Id};{Data};{Papel};{Valor};{Quantidade};{Volume()}";
         }
+
+
     }
 }

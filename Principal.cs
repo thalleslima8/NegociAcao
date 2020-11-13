@@ -17,7 +17,7 @@ namespace NegociAcao
         public Principal()
         {
             InitializeComponent();
-            novoToolStripMenuItem.Enabled = false;
+            novoToolStripMenuItem.Enabled = true;
             desconectarToolStripMenuItem.Enabled = false;
             exibirToolStripMenuItem.Enabled = false;
         }

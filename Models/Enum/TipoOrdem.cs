@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NegociAcao.Models.Enum
 {
-    enum TipoOrdem
+    public enum TipoOrdem
     {
         Compra,
         Venda
